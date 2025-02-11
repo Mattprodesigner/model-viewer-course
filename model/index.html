@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+
+    
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="bmw-s1000.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="-52.16deg 83.69deg 0.3351m" field-of-view="26.26deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.04190755015426712m 0.053473677827036374m 0.014057529776582155m" data-normal="-0.014290010400495934m 0.6105139166229486m 0.791876602263548m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Test</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          Veja em 3D
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
